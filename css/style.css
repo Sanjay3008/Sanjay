@@ -181,7 +181,7 @@ a, a:hover, a:focus, a:active {
 }
 
 
-.row1 img {
+.row1 .x {
     width: auto;
     margin-top: 100px;
     height: auto;
@@ -260,7 +260,6 @@ height: -webkit-fit-content;
 
 .about-me-content {
     font-size: 2px;
-    margin-left: 30px;
     margin-top: 40px;
 }
 
@@ -286,7 +285,7 @@ height: -webkit-fit-content;
 
 /*Skill section*/
 .skill {
-    margin: 80px 0 80px 0px;
+    margin: 80px 0 80px 10px;
     width: 100%;
     padding: 60px 0 0 10px;
     height: auto;
@@ -326,7 +325,7 @@ height: -webkit-fit-content;
 /*projects section*/
 
 .project {
-    padding: 30px 0 0 0px;
+    padding: 60px 0 0 10px;
     height: auto;
 }
 
@@ -489,7 +488,37 @@ footer div img {
     padding: 5px;
     height: 30px;
 }
-
+.site{
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    height: auto;
+}
+.site img {
+    text-align: center;
+    padding: 5px;
+    width: 40px;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 0px;
+    display: inline-block;
+}
+.site_horizontal{
+    width: 150px;
+    text-align: center;
+    margin-top: 10px;
+    height: auto;
+    visibility: hidden;
+}
+.site_horizontal img {
+    text-align: center;
+    padding: 5px;
+    width: 40px;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 0px;
+    display: inline-block;
+}
 /*media queries*/
 @media(max-width:1024px) {
 
@@ -546,7 +575,7 @@ footer div img {
     }
 }
 
-@media(max-width:940px) and (min-width:648px) {
+@media(max-width:991px) and (min-width:648px) {
 
 
     .home .home-content .block {
@@ -560,6 +589,12 @@ footer div img {
         margin-right: 50px;
     }
     .horizontal_resume{
+        visibility: visible;
+    }
+    .site{
+        visibility: visible;
+    }
+    .site_horizontal{
         visibility: visible;
     }
 }
@@ -578,6 +613,15 @@ footer div img {
 
     .home .home-content .block {
         display: none
+    }
+     .site{
+        visibility: visible;
+         margin-left: auto;
+         margin-right: auto;
+    }
+    .site_horizontal{
+        visibility: visible;
+        width: auto;
     }
 
 }
