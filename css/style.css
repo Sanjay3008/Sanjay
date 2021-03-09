@@ -285,7 +285,7 @@ height: -webkit-fit-content;
 
 /*Skill section*/
 .skill {
-    margin: 80px 0 80px 10px;
+    margin: 80px 0 80px 0;
     width: 100%;
     padding: 60px 0 0 10px;
     height: auto;
